@@ -1,2 +1,6 @@
 <button class="btn btn-info" (click)="onToggle()">Click for surprise</button>
 <p *ngIf="oddNum">{{message}}</p>
+<!-- <ol>
+    <li *ngFor="let click of clickCount">{{click}}</li>
+</ol> -->
+<p *ngFor="let click of clickCount" [ngStyle]="{backgroundColor: changeColor(), color : changeColor()}">{{click}}</p>
