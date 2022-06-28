@@ -37,9 +37,8 @@ export class Assignment3Component implements OnInit {
     }
     else if (this.clickNum > 4) {
       this.backgroundColor = 'blue';
-      this.color = 'white';
     }
-    return this.backgroundColor, this.color;
+    return this.backgroundColor;
   }
 
 }
