@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServerCompoonent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { Assignment3Component } from './assignment3/assignment3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerCompoonent,
-    ServersComponent
+    ServersComponent,
+    Assignment3Component
   ],
   imports: [
     BrowserModule,
