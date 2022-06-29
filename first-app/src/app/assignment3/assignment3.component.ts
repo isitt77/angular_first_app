@@ -8,10 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class Assignment3Component implements OnInit {
   message = "";
   clickNum = 0;
-  oddNum = false;
+  isOddNum = false;
   clickCount = [];
   backgroundColor = '';
-  color = '';
 
   constructor() { }
 
@@ -22,11 +21,11 @@ export class Assignment3Component implements OnInit {
     this.clickNum += 1;
     this.clickCount.push(this.clickCount.length + 1);
     if (this.clickNum % 2 != 0) {
-      this.oddNum = true;
+      this.isOddNum = true;
       this.message = "Surprise";
     }
     else {
-      this.oddNum = false;
+      this.isOddNum = false;
     }
 
   }
