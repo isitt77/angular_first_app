@@ -30,11 +30,11 @@ export class Assignment3Component implements OnInit {
 
   }
 
-  changeColor() {
-    if (this.clickNum < 5) {
+  changeColor(i: number) {
+    if (i < 4) {
       this.backgroundColor = 'white';
     }
-    else if (this.clickNum > 4) {
+    else if (i >= 4) {
       this.backgroundColor = 'blue';
     }
     return this.backgroundColor;

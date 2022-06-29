@@ -3,6 +3,7 @@
 <!-- <ol>
     <li *ngFor="let click of clickCount">{{click}}</li>
 </ol> -->
-<p *ngFor="let click of clickCount" [ngStyle]="{backgroundColor: changeColor()}" [ngClass]="{color: clickNum > 4}">
+<p *ngFor="let click of clickCount; let i = index" [ngStyle]="{backgroundColor: changeColor(i)}"
+    [ngClass]="{color: i > 3}">
     {{click}}
 </p>
