@@ -34,7 +34,7 @@ export class Assignment3Component implements OnInit {
     if (i < 4) {
       this.backgroundColor = 'white';
     }
-    else if (i >= 4) {
+    else if (i > 3) {
       this.backgroundColor = 'blue';
     }
     return this.backgroundColor;
